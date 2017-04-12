@@ -1,0 +1,26 @@
+﻿@using Zani.Thomas._5i.XMLReadWrite
+@model List<Persona>
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+
+<h2>Index</h2>
+
+<table class="table table-bordered">
+    @foreach (Persona m in Model)
+    {
+
+        <tr>
+            <td>@m.nome</td>
+            <td>@m.cognome</td>
+            <td>@m.telefono</td>
+            <td>@m.indirizzo</td>
+        </tr>
+
+
+
+    }
+</table>
